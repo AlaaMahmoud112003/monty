@@ -32,7 +32,7 @@ typedef struct stack_my
 typedef struct instruction_my
 {
         char *myopcode;
-        void (*func)(stack_t **stack, unsigned int myline_number);
+        void (*func)(stack_t **mystack, unsigned int myline_number);
 } instruction_t;
 
 extern stack_t *headd;
